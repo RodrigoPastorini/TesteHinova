@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Teste Hinova</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=devide-width">
+            <link rel="stylesheet" href="../css/indexcss.css">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+        </head>
+        <body onload="preencheCadastro()">
+            <div class="formulario">
+                <div class="pessoa">
+                    <tr >
+                        <th>Nome: <input type="text" readonly id="nomePessoa"></th>
+                        <th>Data de Nascimento: <input type="date" readonly id="anos" value="data" onchange="calculateAnos()"></th>
+                        <th>Idade:<input type="number" readonly value="" id="idade" ></th>
+                    </tr>
+                </div>
+                <div class="cep">
+                    <form method="get" action=".">
+                        <tr>
+                            <label>Cep:
+                                <input name="cep" type="text" readonly id="cep" value="" size="10" maxlength="9" /></label><br />
+                                <label>Rua:
+                                <input name="rua" type="text" readonly id="rua" size="60" /></label><br />
+                                <label>Bairro:
+                                <input name="bairro" type="text"  readonly id="bairro" size="40" /></label><br />
+                                <label>Cidade:
+                                <input name="cidade" type="text" readonly id="cidade" size="40" /></label><br />
+                                <label>Estado:
+                                <input name="uf" type="text" readonly id="uf" size="2" /></label><br />
+                                <label>IBGE:
+                                <input name="ibge" type="text" readonly id="ibge" size="8" /></label><br />
+                        </tr>
+                </form>
+                </div>
+            </div>
+            <script src="/Js/formulario.js"></script>
+        </body>
+
+
+    </html>

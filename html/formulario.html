@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Teste Hinova</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=devide-width">
+            <link rel="stylesheet" href="../css/indexcss.css">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+        </head>
+        <body>
+            <div class="formulario">
+                <div class="pessoa">
+                    <tr >
+                        <th>Nome: <input type="text" id="nomePessoa" value="Nome"></th>
+                        <th>Data de Nascimento: <input type="date" id="anos" value="data" onchange="calculateAnos()"></th>
+                        <th>Idade:<input type="number" readonly value="" id="idade" ></th>
+                    </tr>
+                </div>
+                <div class="cep">
+                    <form method="get" action=".">
+                        <tr>
+                            <label>Cep:
+                                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" /></label><br />
+                                <label>Rua:
+                                <input name="rua" type="text" id="rua" size="60" /></label><br />
+                                <label>Bairro:
+                                <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+                                <label>Cidade:
+                                <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+                                <label>Estado:
+                                <input name="uf" type="text" id="uf" size="2" /></label><br />
+                                <label>IBGE:
+                                <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+                        </tr>
+                </form>
+                </div>
+                <button onclick="registraCadastro()"><a href="/html/cadastroConcluido.html">Cadastrar</a></button>
+            </div>
+            <script src="/Js/formulario.js"></script>
+        </body>
+
+
+    </html>

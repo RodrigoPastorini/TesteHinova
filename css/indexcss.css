@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(125, 153, 125);
+}
+.AreaLogin{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 40%;
+    border: black;
+    border-style: solid;
+    width: 20%;
+    height: 20%;
+    font-weight: bold;
+}
+
+
+.dados
+{
+    position: absolute;
+    flex-direction: column;
+    margin-left: 10%;
+    display: flex;    
+    margin-top: 5%;
+    height: 20%;
+    width: 80%;
+}
+
+.botoes
+{
+    position: absolute;
+    flex-direction: row;
+    margin-left: 10%;
+    display: flex;    
+    margin-top: 35%;
+    height:60%;
+    width: 50%;
+}
+.botoes a
+{
+  margin-left: 5%;
+  width: 50%;
+}
+
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 40%;
+    border-style: none;
+    width: 60%;
+    height: 50%;
+    font-weight: bold;
+}
+
+.pessoa{
+    flex-direction: column;
+    width: 15%;
+    height: 40%;
+    margin-left: 50%;
+    margin-top: 20%;
+}
+.cep{
+    flex-direction: column;
+    width: 10%;
+    height: 40%;
+    margin-left: 50%;
+    margin-top: 2%;
+}
+.formulario button{
+    position: relative;
+    width: 20%;
+    margin-top: 10%;
+    margin-left:50% ;
+}
